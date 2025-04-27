@@ -1,54 +1,58 @@
-# React + TypeScript + Vite
+# Cactro Frontend Assignment: Chrome Extension
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview
 
-Currently, two official plugins are available:
+This assignment involves building a Chrome extension that allows users to highlight text on any webpage and save their highlights locally. The goal is to create a simple, user-friendly tool that enhances the browsing experience.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- Highlight text on any webpage.
+- Save highlights locally in the browser.
+- View and manage saved highlights.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Requirements
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+- Use **HTML**, **CSS**, and **JavaScript** for the frontend.
+- Store highlights locally using **localStorage** or any other browser storage API.
+- Ensure the extension is compatible with the latest version of Chrome.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## Getting Started
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+1. Clone this repository:
+  ```bash
+  git clone https://github.com/your-repo/cactro-frontend-assignment.git
+  ```
+2. Navigate to the project directory:
+  ```bash
+  cd cactro-frontend-assignment
+  ```
+3. Open the project in your preferred code editor.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Installation
+
+1. Open Chrome and navigate to `chrome://extensions/`.
+2. Enable **Developer mode** in the top-right corner.
+3. Click **Load unpacked** and select the project folder.
+4. The extension will be added to Chrome.
+
+## Usage
+
+1. Open any webpage.
+2. Highlight text using your mouse.
+3. Save the highlight using the extension's popup or context menu.
+4. View saved highlights in the extension interface.
+
+## Submission
+
+- Ensure your code is clean and well-documented.
+- Submit the project as a GitHub repository link or a zipped folder.
+
+## Bonus Points
+
+- Add a feature to export/import highlights.
+- Implement a search functionality for saved highlights.
+- Use a modern JavaScript framework like React or Vue.
+
+## License
+
+This project is for assignment purposes only and is not intended for commercial use.
